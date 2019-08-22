@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>画一只皮卡丘</title>
+    <link rel="stylesheet" href="prism/prism.css">
+    <link rel="stylesheet" href="default.css">
+    <style id="styleTag"></style>
+</head>
+
+<body>
+    <div class="code-wrapper">
+        <pre id="code"></pre>
+    </div>
+    <div class="preview-wrapper">
+        <div class="preview">
+            <div class="wrapper">
+                <!-- 注意CSS层叠顺序，后面的覆盖前面的 -->
+                <div class="lowerLip-wrapper">
+                    <div class="lowerLip"></div>
+                </div>
+                <div class="nose"></div>
+                <div class="left eye"></div>
+                <div class="right eye"></div>
+                <div class="left face"></div>
+                <div class="right face"></div>
+                <div class="left upperLip"></div>
+                <div class="right upperLip"></div>
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        <!-- 小技巧：把你要的重要数据放在data里面 -->
+        <button data-speed="slow">慢速</button>
+        <button data-speed="normal" class="active">中速</button>
+        <button data-speed="fast">快速</button>
+    </div>
+    <script src="prism/prism.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

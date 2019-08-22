@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after {
+    box-sizing: border-box;
+}
+
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    /* 垂直显示，正如一个列一样 */
+    flex-direction: column;
+    height: 100vh;
+}
+
+.code-wrapper {
+    flex: 1;
+    height: 50%;
+    color: #6089B4;
+    background: rgb(0, 43, 54);
+}
+
+.preview-wrapper {
+    flex: 1;
+    height: 50%;
+}
+
+#code {
+    overflow: auto;
+    height: 100%;
+}
+
+.actions {
+    /* 相对于文档的 body 元素定位 */
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.actions>button {
+    margin: 10px;
+    background: #ddd;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+}
+
+.actions>button.active {
+    background: #696969;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+    background-color: lightgray;
+    width: 10px;
+    height: 10px;
+    background-clip: padding-box;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 5px;
+}
